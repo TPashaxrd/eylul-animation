@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eylül - Animation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .text {
+            font-size: 5rem;
+            font-weight: bold;
+            font-family: 'Arial', sans-serif;
+            color: white;
+            display: flex;
+            gap: 10px;
+        }
+        .text span {
+            opacity: 0;
+            text-shadow: 0 0 5px #fff, 0 0 15px #fff, 0 0 25px rgba(255, 255, 255, 0.9), 0 0 35px rgba(255, 255, 255, 0.7);
+            animation: fadeIn 1s ease-in-out forwards, flicker 1.5s infinite alternate;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        @keyframes flicker {
+            0% { text-shadow: 0 0 5px #fff, 0 0 15px #fff, 0 0 25px rgba(255, 255, 255, 0.9), 0 0 35px rgba(255, 255, 255, 0.7); }
+            50% { text-shadow: 0 0 6px #fff, 0 0 12px #fff, 0 0 22px rgba(255, 255, 255, 0.8), 0 0 32px rgba(255, 255, 255, 0.6); }
+            100% { text-shadow: 0 0 4px #000, 0 0 10px #fff, 0 0 20px rgba(255, 255, 255, 0.7), 0 0 30px rgba(255, 255, 255, 0.5); }
+        }
+    </style>
+</head>
+<body>
+    <div class="text">
+        <span>E</span>
+        <span>Y</span>
+        <span>L</span>
+        <span>Ü</span>
+        <span>L</span>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const letters = document.querySelectorAll(".text span");
+            letters.forEach((letter, index) => {
+                letter.style.animationDelay = `${index * 0.3}s`; 
+            });
+        });
+    </script>
+</body>
+</html>
