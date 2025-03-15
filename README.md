@@ -1,3 +1,4 @@
+(I think he shouldn't have seen this, but he did 😣😣😣)
 NOTE: She's sometimes so angry (just kidding)
 and i think she never see & saw sea and she from
 SANDLAND (now she hate me.)💘😎
