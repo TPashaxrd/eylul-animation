@@ -83,7 +83,12 @@
         <span>L</span>
     </div>
     <div class="subtext">@eylul</div>
-
+    <!-- Background Song Start -->
+        <audio autoplay loop>
+            <source src="Mark.mp3" type="audio/mpeg">
+            Tarayıcınız desteklemiyor.
+        </audio>
+    <!-- Background Song End -->
     <script>
         document.addEventListener("DOMContentLoaded", () => {
             const letters = document.querySelectorAll(".text span");
@@ -91,6 +96,16 @@
                 letter.style.animationDelay = `${index * 0.3}s`; 
             });
         });
+
+        // This code, when the page is loaded, the audio will start playing.
+        window.onload = function() {
+        var audio = document.querySelector("audio");
+        audio.play();
+        }
+
+        console.log("This Design and Coding created by TPashaxrd");
+        console.log("Any questions?")
+        console.log("altintoprak06@gmail.com Mr.Toprak")
     </script>
 </body>
 </html>
