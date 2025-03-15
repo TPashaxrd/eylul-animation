@@ -1,3 +1,6 @@
+NOTE: She's sometimes so angry (just kidding)
+and i think she never see & saw sea and she from
+SANDLAND (now she hate me.)💘😎
 # E Y L U L - Animation & Graphic Design 🎨🎶
 
 Bu proje, HTML, CSS ve JavaScript kullanılarak oluşturulmuş bir animasyon ve grafik tasarım çalışmasıdır.  

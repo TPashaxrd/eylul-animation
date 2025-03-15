@@ -1,111 +1,267 @@
-<!-- This Design and Coding created by TPashaxrd -->
-<!-- For Eylul -->
-<!-- https://github.com/TPashaxrd/eylul-animation -->
 <!DOCTYPE html>
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="https://www.researchgate.net/publication/228481002/figure/fig1/AS:302027784638465@1449020443676/256-image-with-the-E-letter-in-Arial-style-font.png" >
-    <title>E Y L U L</title>
+    <link rel="icon" href="favicon.png">
+    <title>❤ E Y L Ü L ❤</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-        /* 
-        ! font-family: Space Grotesk, serif;
-        ! font-family: Roboto Condensed, serif;
-        ! font-family: Atkinson Hyperlegible Next serif;
-        ! font-family: 'Montserrat', serif;
-        ! font-family: 'Inter', sans-serif;
-        */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
+
         body {
-            background-color: #000;
+            background: #1a1a1a;
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
             overflow: hidden;
-        }
-        .text {
-            font-size: 5rem;
-            font-weight: bold;
             font-family: 'Arial', sans-serif;
-            color: white;
+            position: relative;
+            -webkit-user-select: none;
+            user-select: none;
+        }
+
+        .hearts {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .heart {
+            position: absolute;
+            color: #ff4081;
+            animation: float 8s linear infinite;
+            opacity: 0;
+        }
+
+        .container {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+        }
+
+        .text {
+            display: inline-flex;
+            gap: 15px;
+            perspective: 1000px;
+            padding: 30px;
+            border-radius: 15px;
+            filter: drop-shadow(0 0 20px rgba(255, 64, 129, 0.5));
+        }
+
+        .letter-box {
+            position: relative;
+            width: 80px;
+            height: 100px;
+            overflow: hidden;
+            perspective: 1000px;
+        }
+
+        .letter {
+            font-size: 5rem;
+            font-weight: 900;
+            font-family: 'Montserrat', sans-serif;
+            position: absolute;
+            width: 100%;
+            height: 100%;
             display: flex;
-            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            transform-style: preserve-3d;
+            animation: letterPop 1s ease-out backwards;
+            color: #ff4081;
+            text-shadow: 0 0 10px #ff4081, 0 0 20px #ff4081;
         }
+
+        .letter::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background: #ff4081;
+            bottom: 0;
+            transform: scaleX(0);
+            animation: lineExpand 1s ease-out 1.5s forwards;
+        }
+
+        @keyframes letterPop {
+            0% {
+                opacity: 0;
+                transform: rotateX(90deg) translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: rotateX(0) translateY(0);
+            }
+        }
+
+        @keyframes lineExpand {
+            from { transform: scaleX(0); }
+            to { transform: scaleX(1); }
+        }
+
         .subtext {
-            font-family: 'Space Grotesk', serif;
-            font-size: 1rem;
-            color: white;
-            margin-top: 5px;
+            font-family: 'Dancing Script', cursive;
+            font-size: 2rem;
+            color: #fff;
+            margin-top: 40px;
             opacity: 0;
-            text-shadow: 0 0 3px #fff, 0 0 6px rgba(255, 255, 255, 0.7), 0 0 9px rgba(255, 255, 255, 0.5);
-            animation: fadeIn 1s ease-in-out forwards, softGlow 2s infinite alternate;
-            animation-delay: 1.8s; 
+            animation: fadeInUp 1s ease-out 3s forwards;
+            text-shadow: 0 0 10px #ff4081, 0 0 20px #ff4081;
         }
-        .text span {
-            opacity: 0;
-            text-shadow: 0 0 5px #fff, 0 0 15px #fff, 0 0 25px rgba(255, 255, 255, 0.9), 0 0 35px rgba(255, 255, 255, 0.7);
-            animation: fadeIn 1s ease-in-out forwards, flicker 1.5s infinite alternate;
+
+        @keyframes float {
+            0% { transform: translateY(100vh) rotate(0deg); opacity: 1; }
+            100% { transform: translateY(-100vh) rotate(360deg); opacity: 0; }
         }
-        @keyframes fadeIn {
-            0% { opacity: 0; }
-            100% { opacity: 1; }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
-        @keyframes flicker {
-            0% { text-shadow: 0 0 5px #fff, 0 0 15px #fff, 0 0 25px rgba(255, 255, 255, 0.9), 0 0 35px rgba(255, 255, 255, 0.7); }
-            50% { text-shadow: 0 0 6px #fff, 0 0 12px #fff, 0 0 22px rgba(255, 255, 255, 0.8), 0 0 32px rgba(255, 255, 255, 0.6); }
-            100% { text-shadow: 0 0 4px #fff, 0 0 10px #fff, 0 0 20px rgba(255, 255, 255, 0.7), 0 0 30px rgba(255, 255, 255, 0.5); }
+
+        .glitch {
+            animation: glitch 1s infinite;
         }
-        @keyframes softGlow {
-            0% { text-shadow: 0 0 2px #fff, 0 0 4px rgba(255, 255, 255, 0.6), 0 0 6px rgba(255, 255, 255, 0.4); }
-            100% { text-shadow: 0 0 4px #fff, 0 0 8px rgba(255, 255, 255, 0.8), 0 0 12px rgba(255, 255, 255, 0.6); }
+
+        @keyframes glitch {
+            0% { transform: translate(0); }
+            20% { transform: translate(-2px, 2px); }
+            40% { transform: translate(-2px, -2px); }
+            60% { transform: translate(2px, 2px); }
+            80% { transform: translate(2px, -2px); }
+            100% { transform: translate(0); }
+        }
+
+        .music-control {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            font-size: 1.5rem;
+            color: #ff4081;
+            cursor: pointer;
+            z-index: 1000;
+            animation: pulse 2s infinite;
+            text-shadow: 0 0 10px #ff4081, 0 0 20px #ff4081;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
         }
     </style>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="text">
-        <span>E</span>
-        <span>Y</span>
-        <span>L</span>
-        <span>Ü</span>
-        <span>L</span>
+    <div class="music-control" id="musicControl">🎵</div>
+
+    <div class="hearts" id="hearts"></div>
+    
+    <div class="container">
+        <div class="text">
+            <div class="letter-box">
+                <div class="letter" data-target="E">E</div>
+            </div>
+            <div class="letter-box">
+                <div class="letter" data-target="Y">Y</div>
+            </div>
+            <div class="letter-box">
+                <div class="letter" data-target="L">L</div>
+            </div>
+            <div class="letter-box">
+                <div class="letter" data-target="Ü">Ü</div>
+            </div>
+            <div class="letter-box">
+                <div class="letter" data-target="L">L</div>
+            </div>
+        </div>
+        <div class="subtext">İyi ki varsın ❤️</div>
     </div>
-    <div class="subtext">e y l u l 15.03.2025</div>
-    <!-- Background Song Start -->
-        <audio autoplay loop>
-            <source src="Mark.mp3" type="audio/mpeg">
-            Tarayıcınız desteklemiyor.
-        </audio>
-    <!-- Background Song End -->
+
+    <audio id="music" autoplay loop>
+        <source src="romantic-song.mp3" type="audio/mpeg">
+    </audio>
+
     <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const letters = document.querySelectorAll(".text span");
+        const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZÇĞİÖŞÜ";
+        const letters = document.querySelectorAll('.letter');
+
+        function scrollAlphabet(letterElement, target) {
+            let currentIndex = 0;
+            let scrambleCount = 0;
+            
+            const interval = setInterval(() => {
+                letterElement.textContent = alphabet[currentIndex];
+                currentIndex = (currentIndex + 1) % alphabet.length;
+                
+                if(scrambleCount++ > 15 && letterElement.textContent === target) {
+                    clearInterval(interval);
+                    letterElement.parentElement.classList.add('glitch');
+                    setTimeout(() => {
+                        letterElement.parentElement.classList.remove('glitch');
+                    }, 500);
+                }
+            }, 80);
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
             letters.forEach((letter, index) => {
-                letter.style.animationDelay = `${index * 0.3}s`; 
+                setTimeout(() => {
+                    scrollAlphabet(letter, letter.dataset.target);
+                }, index * 300);
             });
         });
 
-        // This code, when the page is loaded, the audio will start playing.
-        window.onload = function() {
-        var audio = document.querySelector("audio");
-        audio.play();
+        function createHearts() {
+            const heartsContainer = document.getElementById('hearts');
+            for(let i = 0; i < 50; i++) {
+                const heart = document.createElement('div');
+                heart.className = 'heart';
+                heart.innerHTML = '❤';
+                heart.style.left = Math.random() * 100 + 'vw';
+                heart.style.animationDelay = Math.random() * 5 + 's';
+                heart.style.fontSize = Math.random() * 20 + 10 + 'px';
+                heartsContainer.appendChild(heart);
+            }
         }
 
-        console.log("This Design and Coding created by TPashaxrd");
-        console.log("Any questions?")
-        console.log("altintoprak06@gmail.com Mr.Toprak")
+        window.onload = () => {
+            createHearts();
+            document.getElementById('music').play().catch(() => {});
+        };
+
+        const musicControl = document.getElementById('musicControl');
+        const music = document.getElementById('music');
+
+        musicControl.addEventListener('click', () => {
+            if (music.paused) {
+                music.play();
+                musicControl.textContent = '🎵';
+                musicControl.style.animation = 'pulse 2s infinite';
+            } else {
+                music.pause();
+                musicControl.textContent = '🔇';
+                musicControl.style.animation = 'none';
+            }
+        });
+
+        letters.forEach(letter => {
+            letter.addEventListener('mouseover', () => {
+                letter.style.animation = 'glitch 0.5s infinite';
+            });
+            letter.addEventListener('mouseout', () => {
+                letter.style.animation = '';
+            });
+        });
+
+        console.log('%c❤ Bu Şaheser Senin İçin Hanım Efendi! ❤', 'color: #ff4081; font-size: 18px;');
+        console.log('%c❤ E Y L Ü L ❤ ', 'color: #ff4081; font-size: 18px;');
     </script>
 </body>
 </html>
