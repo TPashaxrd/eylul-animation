@@ -1,7 +1,10 @@
 (Sunday, May 17 / 2025,
 she said i dont want u lmao okidoki noproblem i dont care but why?
 everything is just f- pretext.
+
+(PM: 11:53 | Somethings, (distance is an excuse. true love knows no such thing)
 )
+
 
 
 (I think he shouldn't have seen this, but he did 😣😣😣) <br/>
