@@ -1,3 +1,9 @@
+(Sunday, May 17 / 2025,
+she said i dont want u lmao okidoki noproblem i dont care but why?
+everything is just f- pretext.
+)
+
+
 (I think he shouldn't have seen this, but he did 😣😣😣) <br/>
 NOTE: She's sometimes so angry (just kidding)
 and i think she never see & saw sea and she from
