@@ -3,6 +3,9 @@ she said i dont want u lmao okidoki noproblem i dont care but why?
 everything is just f- pretext.
 
 (PM: 11:53 | Somethings, (distance is an excuse. true love knows no such thing)
+
+May19: Oki! whatever, idontcare maybe care but maybe little care
+who is it?
 )
 
 
