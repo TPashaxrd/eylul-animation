@@ -1,3 +1,9 @@
+(May 23 / 2025,
+Okey okey, over :) good luck 
+"https://open.spotify.com/track/4FAHuifWNBufoQzqyoPhAX?si=c23f1344bd684045"
+)
+
+
 (Sunday, May 17 / 2025,
 she said i dont want u lmao okidoki noproblem i dont care but why?
 everything is just f- pretext.
