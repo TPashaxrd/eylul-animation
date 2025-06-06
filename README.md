@@ -1,3 +1,5 @@
+(Last Edit 6.6.2025 (I Think) Over today. I'll delete everything. By the way Today Eid al-Adha. And I Hope/Think my last eid.)
+
 (May 23 / 2025,
 Okey okey, over :) good luck 
 "https://open.spotify.com/track/4FAHuifWNBufoQzqyoPhAX?si=c23f1344bd684045"
