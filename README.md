@@ -1,4 +1,5 @@
 (
+(7.1.2025: LIFE IS GOING PERFECT WITHOUT HER LMAO lmao? yeah right. KEEP WORKINGG!!!!!)
 (6.20.2025 I BLOCKED HER L M A O and finished lol)
 
 Last Edit 6.6.2025 (I Think) Over today. I'll delete everything. By the way Today Eid al-Adha. And I Hope/Think my last eid.)
