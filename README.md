@@ -1,3 +1,4 @@
+by the way if your gf say "it was my friend, not my flort." HAHAHH LMAO YOU KNOW WHAT U WILL DO LMAOOOOOOOOOOOO
 (
 (7.1.2025: LIFE IS GOING PERFECT WITHOUT HER LMAO lmao? yeah right. KEEP WORKINGG!!!!!)
 (6.20.2025 I BLOCKED HER L M A O and finished lol)
